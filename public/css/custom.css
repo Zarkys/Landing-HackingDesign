@@ -1,0 +1,15 @@
+.wall
+{
+    background-image: url("../images/pastora.jpg");
+    
+    background-attachment: fixed;
+    background-size: 100%;
+    color:white;
+    width: 100%;
+    padding-top: 50px;
+    padding: 30px;
+    
+}
+.wall h2{
+    color:white;
+}
