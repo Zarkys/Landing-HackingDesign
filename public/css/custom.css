@@ -1,7 +1,7 @@
 .wall
 {
     background-image: url("../images/pastora.jpg");
-    
+    background-repeat:none;
     background-attachment: fixed;
     background-size: 100%;
     color:white;
@@ -12,4 +12,7 @@
 }
 .wall h2{
     color:white;
+}
+::-webkit-scrollbar { 
+    display: none; 
 }

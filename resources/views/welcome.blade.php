@@ -9,8 +9,10 @@
 		<title>Hacking Design - Hackaton</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="csrf-token" content="{{ csrf_token() }}">
 		<link rel="stylesheet" href="../css/main.css" />
         <link rel="stylesheet" href="../css/custom.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.0/jquery-confirm.min.css">
 	</head>
 	<body>
 
@@ -37,7 +39,7 @@
 							<h2>¡Juntos para crear grandes cosas!</h2>
 							<p>Organizados en grupos, y con la ayuda de mentores, tendrán el reto de culminar un proyecto digital en solo 40 horas de maratón.</p>
 							<ul class="actions vertical">
-                            <li><a href="#" class="button big wide smooth-scroll-middle">Quiero entrar al reto</a></li>
+                            <li><a href="#two" class="button big wide smooth-scroll-middle">Quiero entrar al reto</a></li>
 							</ul>
 						</div>
 						<div class="image">
@@ -46,12 +48,12 @@
 					</section>
 
 				<!-- Three -->
-					<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
+					<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in" id="two">
 						<div class="content">
 							<h2>Conéctate con los grandes</h2>
 							<p>Conoce a los mejores expertos en diseño gráfico y programación y establece conexión con las comunidades profesionales de la ciudad.</p>
 							<ul class="actions vertical">
-                            <li><a href="#" class="button big wide smooth-scroll-middle">Me gusta hacer nuevos amigos</a></li>
+                            <li><a href="#three" class="button big wide smooth-scroll-middle">Me gusta hacer nuevos amigos</a></li>
 							</ul>
 						</div>
 						<div class="image">
@@ -60,12 +62,12 @@
 					</section>
 
 				<!-- Four -->
-					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
+					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="three">
 						<div class="content">
 							<h2>Conocimiento y ganas de aprender en un solo lugar</h2>
-							<p>Mentores y Profesionales expertos dispuestos a enseñarte. Participando junto a ellos pondrás a prueba tus capacidades y descubrirás de todo lo que eres capaz.</p>
+							<p>Mentores y Profesionales expertos dispuestos a enseñarte. Participando junto a ellos pondrás a prueba tus capacidades y descubrirás de todo lo que eres capáz.</p>
 							<ul class="actions vertical">
-                            <li><a href="#" class="button big wide smooth-scroll-middle">Listo para aprender</a></li>
+                            <li><a href="#four" class="button big wide smooth-scroll-middle">Listo para aprender</a></li>
 							</ul>
 						</div>
 						<div class="image">
@@ -74,12 +76,13 @@
 					</section>
 
 				<!-- Five -->
-					<section class="spotlight style1 content-align-center">
+					<section class="spotlight style1 content-align-center" id="four">
                   
 						<div class="inner wall">
-							<h2>Sabado 23 de Junio de 2018 - Barquisimeto Estado Lara</h2>
+							<h2>Sábado 23 de Junio de 2018 - Barquisimeto Estado Lara</h2>
 							<p>A las 8 am, comienza el reto de 40 horas seguidas para lograr culminar los proyectos y retos planteados, con pernocta en el sitio del evento.</p>
-						</div>					
+                            <p>Entrada: Profesionales 600.000 Bs, Estudiantes: Gratis</p>						
+                        </div>					
 
 					</section>
 
@@ -92,17 +95,17 @@
 								<section>
 									<span class="icon style2 major fa-laptop"></span>
 									<h3>PC Desktop / Laptop</h3>
-									<p>El evento cuenta con seguridad, podrás llevar tu computadora, mouse, teclados y todo lo necesario para trabajar más comodamente.</p>
+									<p>El evento cuenta con seguridad, podrás llevar tu computadora, mouse, teclados y todo lo necesario para trabajar más cómodamente.</p>
 								</section>
 								<section>
 									<span class="icon style2 major fa-bed"></span>
 									<h3>Kit Sleeping</h3>
-									<p>Si deseas quedarte en el evento durante la noche, puedes llevar tus items para dormir más comodamente (Colchones inflables, colchoneta, entre otros).</p>
+									<p>Si deseas quedarte en el evento durante la noche, puedes llevar tus ítems para dormir más comodamente (Colchones inflables, colchoneta, entre otros).</p>
 								</section>
 								<section>
 									<span class="icon style2 major fa-wifi"></span>
 									<h3>Conectividad</h3>
-									<p>Puedes llevar tus modem 3G/4G para facilitar tu conectividad a internet como plan B.</p>
+									<p>Puedes llevar tus módem 3G/4G para facilitar tu conectividad a internet como plan B.</p>
 								</section>
 								<section>
 									<span class="icon style2 major fa-cutlery"></span>
@@ -129,53 +132,54 @@
 						<div class="inner medium">
 							<h2>¿Quieres participar? Regístrate en este formulario</h2>
 							<form method="post" action="#">
+
 								<div class="field half first">
 									<label for="name">Nombre y Apellido</label>
-									<input type="text" name="name" id="name" value="" />
+									<input type="text" name="name" id="names" value="" />
 								</div>
 								<div class="field half">
 									<label for="email">Correo Electrónico</label>
 									<input type="email" name="email" id="email" value="" />
 								</div>
                                 <div class="field half first">
-									<label for="name">¿En que Ciudad te encuentras?</label>
-									<input type="text" name="name" id="name" value="" />
+									<label for="name">¿En qué Ciudad te encuentras?</label>
+									<input type="text" name="name" id="city" value="" />
 								</div>
 								<div class="field half">
 									<label for="email">Ocupación - Especialidad</label>
-									<input type="text" name="email" id="email" value="" />
+									<input type="text" name="email" id="ocupation" value="" />
 								</div>
                                 <div class="field half first">
-									<label for="name">¿Como supiste del evento?</label>
-									<input type="text" name="name" id="name" value="" />
+									<label for="name">¿Cómo supiste del evento?</label>
+									<input type="text" name="name" id="howknow" value="" />
 								</div>
 								<div class="field half">
-									<label for="email">¿Estas dispuesto a pernoctar en el evento?</label>
+									<label for="email">¿Estás dispuesto a pernoctar en el evento?</label>
                                   
-									<input type="text" name="email" id="email" value="" />
+									<input type="text" name="email" id="overnight" value="" />
 								</div>
                                 <div class="field half first">
 									<label for="name">¿Dispones de computadora para usar en el evento?</label>
-									<input type="text" name="name" id="name" value="" />
+									<input type="text" name="name" id="havepc" value="" />
 								</div>
 								<div class="field half">
-									<label for="email">¿Cual es tu nivel de estudios?</label>
-									<input type="text" name="email" id="email" value="" />
+									<label for="email">¿Cuál es tu nivel de estudios?</label>
+									<input type="text" name="email" id="levelstudies" value="" />
 								</div>
                                 <div class="field half first">
-									<label for="name">¿En que tecnologías - Herramientas te manejas?</label>
-									<input type="text" name="name" id="name" value="" />
+									<label for="name">¿En qué tecnologías - Herramientas te manejas?</label>
+									<input type="text" name="name" id="technologies" value="" />
 								</div>
 								<div class="field half">
 									<label for="email">¿Tienes alguna idea en mente para desarrollar?</label>
-									<input type="text" name="email" id="email" value="" />
+									<input type="text" name="email" id="projectinmind" value="" />
 								</div>
 								<div class="field">
 									<label for="message">Si tienes alguna duda adicional indicala acá</label>
-									<textarea name="message" id="message" rows="6"></textarea>
+									<textarea name="message" id="questions" rows="6"></textarea>
 								</div>
 								<ul class="actions">
-									<li><input type="submit" name="submit" id="submit" value="Enviar Registro" /></li>
+									<li><input type="button" name="submit" onclick="SaveParticipant()" id="submit" value="Enviar Registro" /></li>
 								</ul>
 							</form>
 
@@ -192,7 +196,9 @@
 			<script src="../js/jquery.scrolly.min.js"></script>
 			<script src="../js/skel.min.js"></script>
 			<script src="../js/util.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.0/jquery-confirm.min.js"></script>
 			<script src="../js/main.js"></script>
+            <script src="../js/custom.js"></script>
 
 	</body>
 </html>

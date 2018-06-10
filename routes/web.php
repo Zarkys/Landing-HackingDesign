@@ -14,3 +14,6 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('gettheparticipants','PrincipalController@getparticipants');
+Route::post('saveparticipants','PrincipalController@SaveParticipants');
