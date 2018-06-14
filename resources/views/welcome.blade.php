@@ -85,7 +85,7 @@
                         </div>					
 
 					</section>
-
+					
 				<!-- Six -->
 					<section class="wrapper style1 align-center">
 						<div class="inner">
@@ -122,6 +122,43 @@
 									<h3>Tu Equipo</h3>
 									<p>Invita a tus amigos del medio, y junto a ellos participa en el reto.</p>
 								</section>
+							
+							</div>
+						</div>
+					</section>
+
+					<section class="wrapper style1 align-center">
+						<div class="inner">
+							<h2>Datos para participar</h2>
+							<p></p>
+							<div class="items style1 medium onscroll-fade-in">
+								<section>
+									<span class="icon style2 major fa-credit-card"></span>
+									<h3>Cuentas Bancarias</h3>
+								<p>Provincial:
+										01080087140100159893
+										Corriente
+										Banesco:
+										01341000340002002586
+										Datos ambas cuentas:
+										Susana valdive
+										C.I.V 16583382
+										svaldive@gmail.com
+									</p>
+
+								</section>
+								<section>
+									<span class="icon style2 major fa-map"></span>
+									<h3>Dirección para llegar</h3>
+									<p>Bajando por la carrera 17, entre calles 22 y 23, justo al frente de la Plaza Lara (Donde está una iglesia), justo al lado del Hotel Agora.</p>
+								</section>
+								<section>
+									<span class="icon style2 major fa-map-marker"></span>
+									<h3>Mapa</h3>
+									
+									<iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d982.1060730012593!2d-69.313323!3d10.0642777!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sve!4v1528942884880" width="100%" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+								</section>
+								
 							
 							</div>
 						</div>
