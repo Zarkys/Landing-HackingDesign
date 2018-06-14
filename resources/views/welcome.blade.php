@@ -154,7 +154,7 @@
 								</section>
 								<section>
 									<span class="icon style2 major fa-map-marker"></span>
-									<h3>Mapa</h3>
+									<h3>Mapa del Evento</h3>
 									
 									<iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d982.1060730012593!2d-69.313323!3d10.0642777!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sve!4v1528942884880" width="100%" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
 								</section>
